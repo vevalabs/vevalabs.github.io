@@ -1,0 +1,44 @@
+body {
+  padding-top: 56px;
+}
+
+body, .sticky-footer-wrapper {
+   min-height:100vh;
+}
+
+.flex-fill {
+   flex:1 1 auto;
+}
+
+.bg-copper {
+  background-color: #CC5233;
+}
+
+.page-content h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.page-content p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.banner h1 {
+  font-family: 'Averia Serif Libre', cursive;  
+  font-size: 3.5rem;
+}
+
+.banner p {
+  font-family: 'Averia Serif Libre', cursive;  
+
+}
+
+.featured .card-title {
+  font-size: 48px;
+
+  font-family: 'Averia Serif Libre', cursive;  
+}
+
+.navbar-brand{
+  font-size: 32px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
