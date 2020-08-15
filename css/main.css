@@ -92,3 +92,7 @@ footer {
   font-size: 1.5rem;
 }
 
+.icons a:hover{
+    text-decoration: none;
+}
+
