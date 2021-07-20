@@ -1,185 +1,482 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
+<head lang="en">
+    <meta charset="UTF-8">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="VevaLabs offers software tools and services for verification and validation (V&V) of complex real-time systems such as highly automated driving systems.">
-  <meta name="author" content="">
+    <!--Page Title-->
+    <title>VevaLabs - Unlock the full power of Simulation</title>
 
-  <title>VevaLabs - Safety validation for agile teams</title>
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="testing verification validation autonomous vehicles adas">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/logo.svg" title="Favicon" />
 
-  <!-- Custom styles for this template -->
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel='icon' href='images/logo-color.svg' type='image/x-icon' />
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css?<?= filemtime('style.css') ?>">
 
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/color.css?<?= filemtime('style.css') ?>">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172993106-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-172993106-1');
-  </script>
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="d-flex flex-column sticky-footer-wrapper">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <div class="p-2">
-        <a href="https://vevalabs.com"><img height="40px" src="images/logo-color.svg"></a>
-      </div>
-      <a class="navbar-brand" href="https://vevalabs.com">VevaLabs</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="https://vevalabs.com">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="https://vevalabs.com/rytest">Rytest</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://vevalabs.com/services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.vevalabs.com">Documentation</a>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status" class="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--End of Preloader-->
+
+    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+        <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+        <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+        </div>
+        <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+        <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+    </div>
+
+    <div id="wrapper">
+
+        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+            <div id="header" class="nav-collapse">
+                <div class="row clearfix">
+                    <div class="col-1">
+
+                        <!--Logo-->
+                        <div id="logo">
+
+                            <a href="#">
+                                <img src="images/logo.svg" alt="Logo" style="height: 40px;" />
+                                <h1>VEVALABS<h1>
+                            </a>
+
+                        </div>
+                        <!--End of Logo-->
+
+                        <aside>
+
+                            <!--Social Icons in Header-->
+                            <ul class="social-icons">
+                                <li>
+                                    <a target="_blank" title="Twitter" href="https://twitter.com/time4veva">
+                                        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="GitLab" href="https://gitlab.com/vevalabs">
+                                        <i class="fa fa-gitlab fa-1x"></i><span>GitLab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="LinkedIn" href="https://linkedin.com/company/67182014">
+                                        <i class="fa fa-linkedin fa-1x"></i><span>GitLab</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--End of Social Icons in Header-->
+
+                        </aside>
+
+                        <!--Main Navigation-->
+                        <nav id="nav-main">
+                            <ul>
+                                <li>
+                                    <a href="#banner">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#rytest">Rytest</a>
+                                </li>
+                                <!-- <li>
+            <a target="_blank" href="https://docs.vevalabs.com">Documentation</a>
           </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="https://vevalabs.com/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+                                <li>
+                                    <a href="#pricing">Offers</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--End of Main Navigation-->
 
-  <!-- Header -->
-  <header class="bg-copper pt-5 mb-5">
-    <div class="container h-100">
-      <div class="banner row h-100 align-items-center">
-        <div class=" col-lg-7">
-          <h1 class="text-white mt-5 mb-2" style="font-size: 2rem;">Specify better. Iterate faster.</h1>
-          <h1 class="text-white mt-3 mb-2" style="font-size: 4.5rem;">Safety validation<br>for agile teams.</h1>
-          <!-- <h1 class="text-white mt-5 mb-2">Real-Time<br>System Validation.<br>Without Hassle.</h1> -->
-          <p class="lead mb-5 text-white">VevaLabs provides modern system verification and validation solutions that boost the productivity of your whole team.<br>Combined with industry-best practices, we bring cutting edge V&V techniques into your workflow to validate your safety-critical real-time system in the most effective way.</p>
-        </div>
-        <div class="featured col-12 col-lg-4">
-          <div class="card shadow-lg bg-dark text-white rounded-lg" style="width: 18rem;">
-            <div class="card-header">Featured Product</div>
-            <div class="card-body">
-              <h5 class="card-title">Rytest</h5>
-              <p class="card-text">Declarative acceptance testing framework for complex real-time systems
-              </p>
-              <p style="font-size:11px;">Now available only to a small number of partners</p>
-              <a href="https://www.vevalabs.com/contact" class="btn btn-block btn-warning">Request A Pilot</a>
+                        <div id="nav-trigger"><span></span></div>
+                        <nav id="nav-mobile"></nav>
+
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+
+            <div id="banner-content" class="row clearfix">
+
+                <div class="col-38">
+
+                    <div class="section-heading">
+                        <h1>UNLOCK THE FULL POWER OF SIMULATION</h1>
+                        <h2>VevaLabs provides modern system verification and safety validation solutions for
+                            simulation-based testing of highly automated driving systems.</h2>
+                    </div>
+
+                    <!--Call to Action-->
+                    <a href="#about" class="button">LEARN MORE</a>
+                    <!--End Call to Action-->
+
+                </div>
+
+            </div>
+        </header>
+
+
+        <!--Main Content Area-->
+        <main id="content">
+
+            <!--Content Section-->
+            <div id="about" class="scrollto clearfix">
+
+                <div class="row no-padding-bottom clearfix">
+
+
+                    <!--Content Left Side-->
+                    <div class="col-3">
+                        <!--User Testimonial-->
+                        <blockquote class="testimonial text-right bigtest">
+                            <q>We strive for simplicity.<br>We want workflows that truly flow. Therefore, we design and
+                                develop
+                                no-frills
+                                tools and techniques to ease the burden of verification and validation for complex
+                                systems.</q>
+                            <footer>— Dogan Ulus, Co-Founder</footer>
+                        </blockquote>
+                        <!-- End of Testimonial-->
+
+                    </div>
+                    <!--End Content Left Side-->
+
+                    <!--Content of the Right Side-->
+                    <div class="col-2">
+                        <div class="section-heading">
+                            <!-- <h3>BELIEVING</h3> -->
+                            <h2 class="section-title">Welcome to VevaLabs!</h2>
+                        </div>
+                        <p>
+                            We are an innovative team who research & develop next-generation test specification, system
+                            verification, and safety validation technologies for highly automated driving systems.
+                        </p>
+                        <p>
+                            As the complexity of driving systems grows, the challenge of verification and validation
+                            (V&V) is much greater than the past. Recent years have witnessed the rise of simulation based V&V workflows and 
+                            we think this is the road to safe autonomy. Yet we need to simplify simulation based V&V workflows and develop 
+                            proper tooling around this new paradigm in automotive. Solving these challenges is our ambition 
+                            and mission at VevaLabs.
+                        </p>
+                        <p>
+                            Surely it is the big challenge ahead us yet we believe a bottom-up emergent approach guided by 
+                            top-down insights and past experiences. We work hard to design, refine, and connect all the pieces 
+                            to reach an ecosystem that would bring the safe autonomy. 
+                        </p>
+                        <p>
+                            <!-- We believe a bottom-up emergent approach guided by top-down insights and past experiences.  -->
+                            Stay tuned with us and check our first paradigm shifting tool Rytest! 
+                        </p>
+
+                        <!-- Action button -->
+                        <a href="#rytest" class="button">
+                            HELLO RYTEST!</i>
+                        </a>
+                    </div>
+                    <!--End Content Right Side-->
+
+                    <div class="col-3">
+                        <!--  <img src="images/undraw_Co_workers_re_1i6i.svg" alt="Dancer"/> -->
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--End of Content Section-->
+
+            <!--Introduction-->
+            <section id="rytest" class="introduction scrollto">
+
+                <div class="row clearfix">
+
+                    <div class="col-3">
+                        <div class="section-heading">
+                            <h3>MONITOR AND CHECK WITH</h3>
+                            <h2 class="section-title">RYTEST</h2>
+                            <p class="section-subtitle">Rytest is a declarative property-based testing tool for your
+                                functional
+                                requirements, operation design domains and scenario validity criteria. All in one with a
+                                familiar
+                                programatic interface.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-2-3">
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-cube fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Abstract Test Specification</h4>
+                                <p>In the era of large-scale simulation, it is no longer practical to maintain a set of
+                                    concrete
+                                    test cases
+                                    or even generate them automatically. Instead Rytest enables users to scale their
+                                    testing
+                                    workflows using
+                                    abstract properties.
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-book fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Declarative Language</h4>
+                                <p>Rytest properties are declarative in nature. This allows user to focus on what to
+                                    test rather
+                                    than how to
+                                    test. Formal semantics guarantees your tests have the same meaning in all existing
+                                    and
+                                    future platforms.
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-bolt fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>On-the-fly Evaluation</h4>
+                                <p>Rytest computes every check, every test, every measurement concurrent to the system.
+                                    Hence,
+                                    Rytest itself
+                                    is a real-time system continuously monitor and test your specifications at runtime.
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-map-signs fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Multi Purpose</h4>
+                                <p>You can use Rytest to specify your functional requirements, operational design
+                                    domains,
+                                    scenario validity
+                                    check and indeed any desired temporal pattern.</p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-rocket fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Fast and Frugal</h4>
+                                <p>Rytest designed to be fast and frugal from scratch. Our state-of-the-art algorithms
+                                    enable
+                                    checking
+                                    complex temporal properties and we research continuously for better ways.</p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-coffee fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Easy to Use</h4>
+                                <p>It's super easy to write abstract properties with the programmtic interface of
+                                    Rytest. We are
+                                    ironing out
+                                    every little annoyance that disrupts the verification and validation workflow.</p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                    </div>
+
+                </div>
+
+
+            </section>
+            <!--End of Introduction-->
+
+            <!--Pricing Tables-->
+            <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+                <div class="row clearfix">
+
+                    <div class="section-heading">
+                        <h3>YOUR CHOICE</h3>
+                        <h2 class="section-title">We have the right deal for you</h2>
+                    </div>
+
+                    <!--Pricing Block-->
+                    <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-block-content">
+                            <h3>Starter</h3>
+                            <p class="pricing-sub">Rytest Lite with free 3-month license</p>
+                            <ul>
+                                <li>Abstract Test Specification</li>
+                                <li>CLI only</li>
+                                <li>Offline Evaluation</li>
+                                <li>User-defined predicates</li>
+                                <li>Documentation support</li>
+                            </ul>
+                            <a href="#contact" class="button">CONTACT US</a>
+                        </div>
+                    </div>
+                    <!--End Pricing Block-->
+
+                    <!--Pricing Block-->
+                    <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="pricing-block-content">
+                            <h3>Early Adopter</h3>
+                            <p class="pricing-sub">Rytest Preview with 1-year subscription</p>
+                            <!-- <div class="pricing">
+            <div class="price"><span>$</span>12</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div> -->
+                            <ul>
+                                <li>Abstract Test Specification</li>
+                                <li>CLI, C++ and Python APIs</li>
+                                <li>Offline & On-the-fly Evaluation</li>
+                                <li>Advanced customization</li>
+                                <li>1 year support + updates</li>
+                            </ul>
+                            <a href="#contact" class="button">CONTACT US</a>
+                        </div>
+                    </div>
+                    <!--End Pricing Block-->
+
+                    <!--Pricing Block-->
+                    <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="pricing-block-content">
+                            <h3>Partner</h3>
+                            <p class="pricing-sub">Custom Pick</p>
+                            <ul>
+                                <li>Rytest Preview</li>
+                                <li>Early access for upcoming products</li>
+                                <li>Integrated VevaLabs technology</li>
+                                <li>Research colloborations</li>
+                                <li>And more...</li>
+                            </ul>
+                            <a href="#contact" class="button">CONTACT US</a>
+                        </div>
+                    </div>
+                    <!--End Pricing Block-->
+
+                </div>
+            </section>
+            <!--End of Pricing Tables-->
+
+            <section id="contact" class="secondary-color text-center scrollto clearfix ">
+                <div class="row clearfix">
+                    <div class="pricing-block col-1 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="pricing-block-content">
+                            <div class="">
+                                <h1>CONTACT US</h1>
+                                <h3>For general enquires:</h3>
+                                <p style="font-family: mono;">contact@vevalabs.com</p>
+                                <h3>For sales and licenses:</h3>
+                                <p style="font-family: mono;">sales@vevalabs.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="landing-footer" class="clearfix">
+            <div class="row clearfix">
+
+                <p id="copyright" class="col-2">Copyright &copy; 2021 VevaLabs, Inc. Theme by <a
+                        href="https://www.shapingrain.com">ShapingRain</a></p>
+
+                <!--Social Icons in Footer-->
+                <ul class="col-2 social-icons">
+                    <li>
+                        <a target="_blank" title="Twitter" href="https://twitter.com/time4veva">
+                            <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="GitLab" href="https://gitlab.com/vevalabs">
+                            <i class="fa fa-gitlab fa-1x"></i><span>GitLab</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="LinkedIn" href="https://linkedin.com/company/67182014">
+                            <i class="fa fa-linkedin fa-1x"></i><span>LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--End of Social Icons in Footer-->
+            </div>
+        </footer>
+
     </div>
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-      </svg>
-    </div>
-  </header>
-
-  <!-- Page Content -->
-  <main class="flex-fill">
-    <div class="container page-content">
-
-      <div class="row">
-        <div class="col-md-5 mb-5">
-          <h2 class="swing-body">Simple, Effective, Familiar ... V&V Tools</h2>
-          <p>Real-time system validation is hard and tools should not complicate it more. From the specification of
-            requirements to automated verification, our tools and techniques provide simple yet effective V&V
-            solutions to comply safety standards like ISO26262 and increase the overall effectiveness of your
-            verification team.</p>
-        </div>
-        <div class="col-md-5 offset-md-1 mb-5">
-          <h2 class="swing-body">Designed for complex real-time systems</h2>
-          <p>We design our tools starting from the first principles to handle temporal nature of
-            specification and verification, much needed for highly automated driving systems and robotics. Temporal
-            order, time-series, and timing constraints are first class citizens in our solutions unlike other software
-            testing tools.</p>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <div class="row">
-        <div class="col-md-5 mb-5">
-          <h2 class="swing-body">Integrating seamlessly into your flow</h2>
-          <p>Text-based interface defines our tools. Powered by modern software practices, you can run our tools from
-            C++, Python and the command-line on your local machines or on clouds in the same way. Connect your
-            favorite version control and issue trackers to obtain the best of all worlds.
-          </p>
-        </div>
-
-        <div class="col-md-5 offset-md-1 mb-5">
-          <h2 class="swing-body">Standing on strong mathematical foundations</h2>
-          <p>We bring the best parts of the research on formal and runtime verification on real-time systems into
-            your verification flow. For years, we have contributed to the state-of-the-art and now advance it further
-            at VevaLabs. Subscribe now to our tools to get all the updates...</p>
-        </div>
-      </div>
-      <!-- /.row -->
-
-    </div>
-  </main>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-3 bg-dark page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="icons">
-            <a href="https://www.twitter.com/time4veva">
-              <i class="fa fa-twitter text-white"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/time4veva">
-              <i class="fa fa-linkedin-square text-white"></i>
-            </a>
-            <a href="https://www.github.com/vevalabs">
-              <i class="fa fa-github text-white"></i>
-            </a>
-          </div>
-          <p class="m-0 text-white-50">Copyright &copy; VevaLabs 2020</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- Include JavaScript resources -->
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/featherlight.gallery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/images-loaded.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/site.js"></script>
 </body>
-
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </html>

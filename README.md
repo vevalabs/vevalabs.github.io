@@ -1,3 +1,4 @@
-# VevaLabs
+# Unlock the full power of simulation
 
-Tools and techniques for real-time system verification and validation
+VevaLabs provides modern system verification and safety validation solutions for simulation-based testing of highly automated driving systems.
+
