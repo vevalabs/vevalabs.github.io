@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="css/style.css?<?= filemtime('style.css') ?>">
 
     <!-- Namari Color CSS -->
-    <link rel="stylesheet" href="css/color.css?<?= filemtime('style.css') ?>">
+    <link rel="stylesheet" href="css/color.css?<?= filemtime('color.css') ?>">
+    <link rel="stylesheet" href="css/timeline.css?<?= filemtime('timeline.css') ?>">
 
     <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -192,29 +193,24 @@
                         <p>
                             As the complexity of driving systems grows, the challenge of verification and validation
                             (V&V) is much greater than the past. Recent years have witnessed the rise of simulation
-                            based V&V workflows and
-                            we think this is the road to safe autonomy. Yet we need to simplify simulation based V&V
-                            workflows and develop
-                            proper tooling around this new paradigm in automotive. Solving these challenges is our
-                            ambition
-                            and mission at VevaLabs.
+                            based V&V workflows and we think this is the road to safe autonomy. Yet we need to simplify
+                            simulation based V&V workflows and develop proper tooling around these new concepts in the
+                            automotive industry. Solving these challenges is our ambition and mission at VevaLabs.
                         </p>
                         <p>
                             Surely it is the big challenge ahead us yet we believe a bottom-up emergent approach guided
-                            by
-                            top-down insights and past experiences. We work hard to design, refine, and connect all the
-                            pieces
-                            to reach an ecosystem that would bring the safe autonomy.
+                            by top-down insights and past experiences. We work hard to design, refine, and connect all
+                            the pieces to reach an ecosystem that would bring the safe autonomy.
                         </p>
                         <p>
-                            <!-- We believe a bottom-up emergent approach guided by top-down insights and past experiences.  -->
-                            Stay tuned with us and check our first paradigm shifting tool Rytest!
+                            Follow the evolution of general testing paradigms below until you reach our state-of-the-art
+                            testing tool Rytest.
                         </p>
 
                         <!-- Action button -->
-                        <a href="#rytest" class="button">
+                        <!-- <a href="#rytest" class="button">
                             HELLO RYTEST!</i>
-                        </a>
+                        </a> -->
                     </div>
                     <!--End Content Right Side-->
 
@@ -228,6 +224,92 @@
             </div>
             <!--End of Content Section-->
 
+
+            <section id="cd-timeline" class="cd-container row no-padding-bottom clearfix">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2 class="section-title">Directed Testing</h2>
+                        <div class="timeline-content-info">
+                        </div>
+                        <p>
+                            Directed tests are usually a set of predefined test cases that
+                            have been designed to exercise specific functionality in the
+                            system. It is usually a manual effort but effective when the
+                            system under test is small and relatively well understood.
+                            Unit testing in software falls into directed testing.
+                        </p>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                    </div> <!-- cd-timeline-img -->
+                    <div class="cd-timeline-content">
+                        <h2 class="section-title">Structural Coverage</h2>
+                        <p>
+                            When the system under test is not complex, testing each structural element a few
+                            times would be quite informative and we assume the function will behave as intended for the
+                            rest. Structural (code/block) coverage methods use this assumption and measures how much
+                            of the system tested visited during test as a proxy.
+                        </p>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2 class="section-title">Fuzz Testing</h2>
+                        <p>
+                            When systems are getting complex, it is harder to make predictions on their behavior in
+                            different situations. Fuzz or random testing increase our confidence to the system by
+                            testing random situations. Yet we have lost to ability to predefine desired test outcomes
+                            because we no longer know the preconditions in advance. Hence, fuzz testing is mainly
+                            used to check simple requirements such no crash.
+                        </p>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-location">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2 class="section-title">Situation Coverage</h2>
+                        <p>
+                            Similarly we want to measure how many diverse situations we encountered during fuzz tetsing.
+                            We can match situations with pass and fail results. However, what constitutes a
+                            pass or a fail can be much more complex than simple assertions.
+                        </p>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-location">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2 class="section-title">Property-based Testing</h2>
+                        <p>
+                            Property-based testing constitutes the next step in the evolution of testing methods. Now we
+                            want to test complex requirements over complex systems. We can still generate random
+                            situations but we accompancy them with well-defined rules (properties) to evaluate each
+                            situation better.
+                        </p>
+                        <p><strong>
+                                At VevaLabs, we have designed Rytest to enable property-based testing for complex
+                                real-time
+                                systems, in particular automated driving systems.</strong>
+                        </p>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+            </section> <!-- cd-timeline -->
+
             <!--Introduction-->
             <section id="rytest" class="introduction scrollto">
 
@@ -238,10 +320,8 @@
                             <h3>MONITOR AND CHECK WITH</h3>
                             <h2 class="section-title">RYTEST</h2>
                             <p class="section-subtitle">Rytest is a declarative property-based testing tool for your
-                                functional
-                                requirements, operation design domains and scenario validity criteria. All in one with a
-                                familiar
-                                programatic interface.</p>
+                                functional requirements, operation design domains and scenario validity criteria. All in
+                                one with a familiar programatic interface.</p>
                         </div>
                         <a href="#pricing" class="button">
                             GET RYTEST</i>
@@ -351,10 +431,9 @@
                             <!--Icon Block Description-->
                             <div class="icon-block-description">
                                 <h4>Easy to Use</h4>
-                                <p>It's super easy to write abstract properties with the programmtic interface of
-                                    Rytest. We are
-                                    ironing out
-                                    every little annoyance that disrupts the verification and validation workflow.</p>
+                                <p>It's super easy to author abstract properties with the programmtic interface of
+                                    Rytest. We are ironing out every little annoyance that disrupts the verification and
+                                    validation workflow.</p>
                             </div>
                         </div>
                         <!--End of Icon Block-->
