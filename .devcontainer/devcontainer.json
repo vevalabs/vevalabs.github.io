@@ -1,11 +1,7 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/go:1",
-  "features": {
-    "ghcr.io/devcontainers/features/hugo:1": {
-      "extended": true,
-      "version": "0.147.9"
-    },
-    "ghcr.io/devcontainers/features/node:1": {}
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
   },
   "customizations": {
     "vscode": {
@@ -19,5 +15,6 @@
   },
   "forwardPorts": [
     1313
-  ]
+  ],
+  // "remoteUser": "hugo"
 }

@@ -1,5 +1,7 @@
 # Hugo configuration file
-title: My Site
+title: VevaLabs | Boğaziçi University
+
+baseURL: "https://vevalabs.dev/"
 
 # import hextra as module
 module:
@@ -7,45 +9,51 @@ module:
     - path: github.com/imfing/hextra
 
 markup:
-  # allow raw html
   goldmark:
     renderer:
       unsafe: true
-
-  # enable hextra syntax highlight
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
   highlight:
     noClasses: false
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
-      weight: 1
-    - name: About
-      pageRef: /about
-      weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    # - name: Docs
+    #   pageRef: /docs
+    #   weight: 1
+    # - name: About
+    #   pageRef: /about
+    #   weight: 2
+    - name: People
+      pageRef: /people
       weight: 3
     - name: Search
-      weight: 4
+      weight: 5
       params:
         type: search
     - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      weight: 6
+      url: "https://github.com/bounverif"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: images/vevalabs.svg
+      link: /
+      width: 40
+      height: 20
+
+  page:
+    width: normal
 
   footer:
     displayCopyright: false
@@ -54,3 +62,7 @@ params:
   editURL:
     enable: true
     base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+
+  theme:
+    default: system
+    displayToggle: true
