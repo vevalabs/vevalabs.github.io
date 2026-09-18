@@ -1,18 +1,11 @@
 ---
 title: Documentation
-next: first-page
+layout: docs
 ---
 
-This is a demo of the theme's documentation layout.
+Documentation for the formats and tools developed at VevaLabs.
 
-## Hello, World!
-
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+{{< cards >}}
+{{< card title="Getting Started" subtitle="From a requirement in words to a validated specification" link="/docs/getting-started/" >}}
+{{< card title="Reelay Specification Format" subtitle="A declarative TOML format for temporal logic specifications" link="/docs/ryspec/" >}}
+{{< /cards >}}
