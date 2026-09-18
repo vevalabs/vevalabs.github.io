@@ -1,6 +1,6 @@
-FROM ghcr.io/gohugoio/hugo:v0.152.2
+FROM ghcr.io/gohugoio/hugo:v0.166.0
 USER root
 
-RUN apk add --no-cache git curl gnupg python3 py3-pip 
+RUN apk add --no-cache bash git curl gnupg python3 py3-pip 
 
 ENTRYPOINT [ "/bin/ash" ]
